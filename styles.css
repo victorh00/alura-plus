@@ -10,6 +10,7 @@
     --botao-azul: #167BF7;
     --cor-de-fundo: #00030C;
     --fonte-principal: "Inter", serif;
+    --botao-azul-efeito: #3c94ff;
 }
 
 body {
@@ -44,9 +45,17 @@ body {
     margin-bottom: 1em;
 }
 
+.container__botao:hover {
+    background-color: var(--botao-azul-efeito);
+}
+
 .botao__secundario {
     background-color: transparent;
     border: 2px solid var(--branco-principal);
+}
+
+.botao__secundario:hover {
+    background-color: #2424247a;
 }
 
 .container__aviso {
@@ -132,6 +141,14 @@ body {
 
 .lista__link {
     text-decoration: none;
+}
+
+.lista__link a:hover {
+    color: var(--botao-azul);
+}
+
+.lista__link a:active {
+    color: purple;
 }
 
 .link__ancora {
